@@ -73,6 +73,8 @@ def varAnd(population, toolbox, cxpb, mutpb):
             offspring[i - 1], offspring[i] = toolbox.mate(offspring[i - 1],
                                                           offspring[i])
             del offspring[i - 1].fitness.values, offspring[i].fitness.values
+            if test == 1:
+                print('ok')
 
     for i in range(len(offspring)):
         if random.random() < mutpb:
@@ -80,7 +82,6 @@ def varAnd(population, toolbox, cxpb, mutpb):
             del offspring[i].fitness.values
 
     return offspring
-
 
 def eaSimple(population, toolbox, cxpb, mutpb, ngen, stats=None,
              halloffame=None, verbose=__debug__):
