@@ -122,7 +122,7 @@ class Toolbox(object):
         self.register(alias, function, *args, **kargs)
 
 
-class Fitness(object):
+class Fitness(object, hey):
     """The fitness is a measure of quality of a solution. If *values* are
     provided as a tuple, the fitness is initalized using those values,
     otherwise it is empty (or invalid).
