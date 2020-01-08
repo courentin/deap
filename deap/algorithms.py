@@ -242,6 +242,8 @@ def varOr(population, toolbox, lambda_, cxpb, mutpb):
             offspring.append(ind)
         else:                           # Apply reproduction
             offspring.append(random.choice(population))
+        elif:
+            print('oui')
 
     return offspring
 
